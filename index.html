@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadila Oktaviana Putri - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#1e3f2b',    /* Hijau Tua */
+                            yellow: '#f5a623',  /* Kuning/Oranye */
+                            light: '#f8f9fa',   /* Abu-abu terang untuk card */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animasi Marquee (Teks Berjalan) */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased overflow-x-hidden">
+
+    <div class="pt-6 px-4 max-w-6xl mx-auto sticky top-0 z-50">
+        <nav class="bg-brand-dark text-white rounded-full px-6 py-3 flex justify-between items-center shadow-lg">
+            <div class="flex items-center gap-2 font-bold text-xl">
+                <div class="bg-brand-yellow text-brand-dark w-8 h-8 rounded-full flex items-center justify-center">N
+                </div>
+                Nadila.
+            </div>
+
+            <ul class="hidden md:flex gap-6 text-sm font-medium">
+                <li><a href="#home" class="nav-link hover:text-brand-yellow transition cursor-pointer active">Home</a>
+                </li>
+                <li><a href="#services" class="nav-link hover:text-brand-yellow transition cursor-pointer">Services</a>
+                </li>
+                <li><a href="#about" class="nav-link hover:text-brand-yellow transition cursor-pointer">About</a></li>
+                <li><a href="#project" class="nav-link hover:text-brand-yellow transition cursor-pointer">Projects</a>
+                </li>
+                <li><a href="#education"
+                        class="nav-link hover:text-brand-yellow transition cursor-pointer">Education</a></li>
+                <li><a href="#contact" class="nav-link hover:text-brand-yellow transition cursor-pointer">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="max-w-6xl mx-auto px-4 pt-16 pb-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <div
+                class="inline-block border-2 border-dashed border-gray-400 rounded-lg px-3 py-1 text-sm font-medium text-gray-600 mb-4 relative">
+                <div class="absolute -top-1 -left-1 w-2 h-2 bg-brand-yellow rounded-full"></div>
+                <div class="absolute -bottom-1 -right-1 w-2 h-2 bg-brand-yellow rounded-full"></div>
+                Hello There!
+            </div>
+
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 text-brand-dark">
+                <span class="text-brand-yellow underline decoration-wavy decoration-2 underline-offset-8">Nadila
+                    Oktaviana Putri</span><br>
+                Frontend Developer
+            </h1>
+
+            <p class="text-gray-500 mb-8 max-w-md">
+                Saya seorang Front-End Developer yang memiliki pengalaman dalam pengembangan website dan antarmuka
+                pengguna.
+            </p>
+
+        </div>
+
+        <div class="relative flex justify-center">
+            <div class="absolute bg-brand-yellow w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 blob-shape"
+                style="border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;"></div>
+
+            <img src="img/foto.jpeg" alt="Nadila" class="rounded-b-full w-[80%] max-w-[400px] object-cover h-[500px]">
+
+            <div
+                class="absolute bottom-10 -right-4 bg-brand-yellow text-brand-dark px-4 py-2 rounded-full font-bold shadow-lg text-sm">
+                Frontend Developer
+            </div>
+            <div
+                class="absolute top-1/2 -left-8 bg-brand-dark text-white px-4 py-2 rounded-full font-bold shadow-lg text-sm flex items-center gap-2">
+                <i class="fa-solid fa-pen-nib text-brand-yellow"></i> Web Developer
+            </div>
+        </div>
+    </section>
+    <div
+        class="bg-brand-yellow text-brand-dark py-4 marquee-container transform -rotate-1 origin-left border-y-4 border-brand-dark w-[105vw]">
+        <div class="marquee-content font-bold text-lg flex gap-8 items-center">
+            <span>Web Developer</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>Frontend Developer</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>UI/UX</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>Web Development</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>Frontend Developer</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>UI/UX</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>Web Developer</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>Frontend Developer</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>UI/UX</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>Web Development</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>Frontend Developer</span> <i class="fa-solid fa-asterisk text-sm"></i>
+            <span>UI/UX</span> <i class="fa-solid fa-asterisk text-sm"></i>
+        </div>
+    </div>
+
+    <section class="max-w-6xl mx-auto px-4 py-20 mt-10" id="services">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <p class="text-brand-yellow font-bold text-sm uppercase mb-2">&mdash; Services</p>
+                <h2 class="text-4xl font-extrabold text-brand-dark">Services <span class="text-brand-dark">I
+                        Provide</span></h2>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-brand-light p-8 rounded-3xl hover:shadow-xl transition border border-gray-100">
+                <div class="bg-white w-12 h-12 rounded-xl flex items-center justify-center mb-6 shadow-sm">
+                    <i class="fa-solid fa-pen-ruler text-brand-dark text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brand-dark">Frontend Developer</h3>
+                <p class="text-gray-500 text-sm mb-6"> Membuat tampilan website yang responsif, modern, dan interaktif
+                    menggunakan HTML, CSS, JavaScript, dan framework terbaru.</p>
+            </div>
+
+            <div class="bg-brand-light p-8 rounded-3xl hover:shadow-xl transition border border-gray-100">
+                <div class="bg-white w-12 h-12 rounded-xl flex items-center justify-center mb-6 shadow-sm">
+                    <i class="fa-solid fa-laptop-code text-brand-dark text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brand-dark">Web Developer</h3>
+                <p class="text-gray-500 text-sm mb-6"> Mengembangkan website yang fungsional dan user-friendly dengan
+                    fokus pada performa, desain, dan pengalaman pengguna.</p>
+            </div>
+
+            <div class="bg-brand-light p-8 rounded-3xl hover:shadow-xl transition border border-gray-100">
+                <div class="bg-white w-12 h-12 rounded-xl flex items-center justify-center mb-6 shadow-sm">
+                    <i class="fa-solid fa-mobile-screen-button text-brand-dark text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brand-dark">UI/UX Design</h3>
+                <p class="text-gray-500 text-sm mb-6"> Merancang antarmuka pengguna yang intuitif dan menarik, serta
+                    mengoptimalkan pengalaman pengguna melalui penelitian dan prototipe.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-brand-dark text-white py-20 relative overflow-hidden" id="about">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+            <div class="relative flex justify-center">
+                <div
+                    class="absolute bg-brand-yellow w-72 h-72 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                </div>
+
+                <img src="img/foto.jpeg" alt="About Nadila"
+                    class="relative z-10 w-80 h-80 object-cover rounded-full border-4 border-brand-dark">
+
+                <div
+                    class="absolute bottom-4 left-4 z-20 bg-brand-yellow text-brand-dark text-xs font-bold px-3 py-1 rounded-full rotate-[-10deg]">
+                    Web Developer</div>
+                <div
+                    class="absolute top-10 right-4 z-20 bg-brand-yellow text-brand-dark text-xs font-bold px-3 py-1 rounded-full rotate-[15deg]">
+                    Front-End Developer</div>
+                <div
+                    class="absolute bottom-10 right-0 z-20 bg-brand-yellow text-brand-dark text-xs font-bold px-3 py-1 rounded-full">
+                    Full-Stack Developer</div>
+            </div>
+
+            <div>
+                <p class="text-brand-yellow font-bold text-sm uppercase mb-2">&mdash; About Me</p>
+                <h2 class="text-4xl font-extrabold mb-4">Siapa <span class="text-brand-yellow">Nadila Oktaviana
+                        Putri?</span></h2>
+                <p class="text-gray-300 text-sm mb-8 leading-relaxed max-w-md">
+                    Saya merupakan seorang Front-End Developer yang memiliki minat dalam pengembangan website dan
+                    tampilan antarmuka pengguna. Saya terbiasa membuat website yang responsif, interaktif, dan
+                    user-friendly menggunakan teknologi web modern. Saya juga memiliki kemampuan bekerja sama dalam tim,
+                    berpikir kreatif, serta mampu menyelesaikan proyek dengan baik dan terstruktur.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-20 text-center" id="skills">
+        <p class="text-brand-yellow font-bold text-sm uppercase mb-2">&mdash; My Favorite Tools</p>
+        <h2 class="text-4xl font-extrabold text-brand-yellow mb-2">Exploring the Tools</h2>
+        <h3 class="text-4xl font-extrabold text-brand-dark mb-12">Behind My Projects</h3>
+
+        <div class="flex flex-wrap justify-center gap-6 md:gap-10">
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 rounded-full bg-gray-50 shadow-sm border border-gray-100 flex flex-col items-center justify-center mb-3 hover:-translate-y-2 transition duration-300 cursor-pointer">
+                    <i class="fa-brands fa-html5 text-3xl text-[#E34F26] mb-1"></i>
+                </div>
+                <span class="text-gray-500 text-sm font-medium">HTML</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 rounded-full bg-gray-50 shadow-sm border border-gray-100 flex flex-col items-center justify-center mb-3 hover:-translate-y-2 transition duration-300 cursor-pointer">
+                    <i class="fa-brands fa-css3-alt text-3xl text-[#1572B6] mb-1"></i>
+                </div>
+                <span class="text-gray-500 text-sm font-medium">CSS</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 rounded-full bg-gray-50 shadow-sm border border-gray-100 flex flex-col items-center justify-center mb-3 hover:-translate-y-2 transition duration-300 cursor-pointer">
+                    <i class="fa-brands fa-figma text-3xl text-[#F24E1E]"></i>
+                </div>
+                <span class="text-gray-500 text-sm font-medium">Figma</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 rounded-full bg-gray-50 shadow-sm border border-gray-100 flex flex-col items-center justify-center mb-3 hover:-translate-y-2 transition duration-300 cursor-pointer">
+                    <i class="fa-brands fa-js text-3xl text-[#F7DF1E] mb-1"></i>
+                </div>
+                <span class="text-gray-500 text-sm font-medium">JavaScript</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 rounded-full bg-gray-50 shadow-sm border border-gray-100 flex flex-col items-center justify-center mb-3 hover:-translate-y-2 transition duration-300 cursor-pointer">
+                    <i class="fa-brands fa-php text-3xl text-[#777BB4] mb-1"></i>
+                </div>
+                <span class="text-gray-500 text-sm font-medium">PHP</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 rounded-full bg-gray-50 shadow-sm border border-gray-100 flex flex-col items-center justify-center mb-3 hover:-translate-y-2 transition duration-300 cursor-pointer">
+                    <i class="fa-solid fa-list-check text-2xl text-green-600 mb-1"></i>
+                </div>
+                <span class="text-gray-500 text-sm font-medium">QA</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 rounded-full bg-gray-50 shadow-sm border border-gray-100 flex flex-col items-center justify-center mb-3 hover:-translate-y-2 transition duration-300 cursor-pointer">
+                    <i class="fa-solid fa-mobile-screen text-2xl text-[#02569B] mb-1"></i>
+                </div>
+                <span class="text-gray-500 text-sm font-medium">Flutter</span>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div
+                    class="w-24 h-24 rounded-full bg-gray-50 shadow-sm border border-gray-100 flex flex-col items-center justify-center mb-3 hover:-translate-y-2 transition duration-300 cursor-pointer">
+                    <i class="fa-brands fa-github text-3xl text-black mb-1"></i>
+                </div>
+                <span class="text-gray-500 text-sm font-medium">GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#f3f4f6] py-20" id="project">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+                <div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-4 h-[2px] bg-brand-yellow"></div>
+                        <p class="text-brand-dark font-bold text-xs uppercase tracking-wider">My Portfolio</p>
+                    </div>
+                    <h2 class="text-4xl font-extrabold text-brand-dark">
+                        My Latest <span class="text-brand-yellow">Projects</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white p-4 rounded-[2.5rem] shadow-sm flex flex-col border border-gray-100">
+                    <div class="rounded-[2rem] overflow-hidden mb-6">
+                        <img src="img/project1.jpeg" alt="Beauty App" class="w-full object-contain rounded-[2rem]">
+                    </div>
+
+                    <div class="px-2 pb-4">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                HTML
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                CSS
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                JavaScript
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                PHP
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                Laravel
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                MySQL
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-extrabold text-brand-dark leading-tight max-w-[80%]">
+                                Website Pengaduan Masyarakat
+                            </h3>
+                        </div>
+
+                        <p class="text-gray-500 text-sm leading-relaxed mt-4">
+                            Website Pengaduan Masyarakat yang dibuat untuk memudahkan masyarakat dalam menyampaikan
+                            laporan, keluhan, dan aspirasi secara online dengan lebih cepat dan efisien.
+                            Sistem ini dilengkapi dengan fitur pengelolaan data pengaduan, status laporan,
+                            serta tampilan dashboard admin yang responsif dan mudah digunakan.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-[2.5rem] shadow-sm flex flex-col border border-gray-100">
+                    <div class="rounded-[2rem] overflow-hidden mb-6">
+                        <img src="img/project2.jpeg" alt="Beauty App" class="w-full object-contain rounded-[2rem]">
+                    </div>
+
+                    <div class="px-2 pb-4">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                HTML
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                CSS
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                JavaScript
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                Bootstrap
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-extrabold text-brand-dark leading-tight max-w-[80%]">
+                                Parella - Fashion Store Website
+                            </h3>
+                        </div>
+
+                        <p class="text-gray-500 text-sm leading-relaxed mt-4">
+                            Aplikasi ecommerce mobile dengan tampilan modern dan user-friendly untuk membantu pengguna
+                            menemukan serta membeli produk kecantikan dengan mudah dan nyaman.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-[2.5rem] shadow-sm flex flex-col border border-gray-100">
+                    <div class="rounded-[2rem] overflow-hidden mb-6">
+                        <img src="img/project3.png" alt="Beauty App" class="w-full object-contain rounded-[2rem]">
+                    </div>
+
+                    <div class="px-2 pb-4">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                HTML
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                CSS
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                JavaScript
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                PHP
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                Laravel
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                MySQL
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-extrabold text-brand-dark leading-tight max-w-[80%]">
+                                Website Inventaris Sekolah
+                            </h3>
+
+                        </div>
+
+                        <p class="text-gray-500 text-sm leading-relaxed mt-4">
+                            Website inventaris sekolah yang dibuat untuk membantu proses pelaporan barang rusak
+                            atau fasilitas yang perlu diperbaiki di lingkungan sekolah. Sistem ini memudahkan pengguna
+                            dalam mengirim laporan kerusakan, sementara pihak sekolah dapat mengelola data perbaikan
+                            dengan lebih cepat, terstruktur, dan efisien.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-[2.5rem] shadow-sm flex flex-col border border-gray-100">
+                    <div class="rounded-[2rem] overflow-hidden mb-6">
+                        <img src="img/project4.jpeg" alt="Beauty App" class="w-full object-contain rounded-[2rem]">
+                    </div>
+
+                    <div class="px-2 pb-4">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                HTML
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                CSS
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                JavaScript
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                PHP
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                Laravel
+                            </span>
+
+                            <span
+                                class="bg-brand-yellow text-white px-4 py-1.5 rounded-full text-[10px] font-extrabold uppercase">
+                                MySQL
+                            </span>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-extrabold text-brand-dark leading-tight max-w-[80%]">
+                                Website Data Intern Perusahaan
+                            </h3>
+                        </div>
+
+                        <p class="text-gray-500 text-sm leading-relaxed mt-4">
+                            Website pengelolaan data intern perusahaan yang dibuat untuk mempermudah proses pendataan
+                            peserta magang atau intern secara digital. Sistem ini memiliki fitur pengelolaan data
+                            peserta,
+                            status intern, asal pendidikan, serta dashboard admin yang membantu perusahaan dalam
+                            memantau
+                            dan mengatur data intern dengan lebih rapi dan efisien.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-20" id="education">
+        <div class="text-center mb-16">
+            <div class="flex items-center justify-center gap-2 mb-2">
+                <div class="w-4 h-[2px] bg-brand-yellow"></div>
+                <p class="text-brand-dark font-bold text-xs uppercase tracking-wider">Education & Work</p>
+                <div class="w-4 h-[2px] bg-brand-yellow"></div>
+            </div>
+            <h2 class="text-4xl font-extrabold text-brand-dark">
+                My <span class="text-brand-yellow font-normal italic">Academic and</span><br>
+                Professional <span class="text-brand-dark">Journey</span>
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="bg-gray-50 p-8 rounded-[2.5rem] border border-gray-100 shadow-sm">
+                <div class="flex items-center gap-4 mb-10">
+                    <div
+                        class="w-12 h-12 bg-brand-yellow rounded-full flex items-center justify-center text-brand-dark shadow-md">
+                        <i class="fa-solid fa-graduation-cap text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-brand-dark">Education</h3>
+                </div>
+
+                <div
+                    class="space-y-10 relative before:absolute before:left-[23px] before:top-2 before:bottom-2 before:w-[1px] before:bg-dashed before:border-l before:border-gray-300">
+
+                    <div class="relative pl-12">
+                        <div
+                            class="absolute left-4 top-2 w-4 h-4 bg-white border-2 border-brand-yellow rounded-full z-10">
+                        </div>
+                        <p class="text-gray-400 text-sm font-bold mb-1">2023 - 2026</p>
+                        <h4 class="text-xl font-extrabold text-brand-dark mb-1">SMK WIKRAMA BOGOR | PPLG</h4>
+                        <p class="text-gray-500 text-sm">Mempelajari pengembangan aplikasi dan website, mulai dari
+                            perancangan sistem, pemrograman, pengelolaan database, hingga penerapan teknologi untuk
+                            mendukung solusi digital.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-[2.5rem] border border-gray-100 shadow-sm">
+                <div class="flex items-center gap-4 mb-10">
+                    <div
+                        class="w-12 h-12 bg-brand-yellow rounded-full flex items-center justify-center text-brand-dark shadow-md">
+                        <i class="fa-solid fa-briefcase text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-brand-dark">Work Experience</h3>
+                </div>
+
+                <div
+                    class="space-y-10 relative before:absolute before:left-[23px] before:top-2 before:bottom-2 before:w-[1px] before:bg-dashed before:border-l before:border-gray-300">
+
+                    <div class="relative pl-12">
+                        <div
+                            class="absolute left-4 top-2 w-4 h-4 bg-white border-2 border-brand-yellow rounded-full z-10">
+                        </div>
+                        <p class="text-gray-400 text-sm font-bold mb-1">Januari - Juni 2025</p>
+                        <h4 class="text-xl font-extrabold text-brand-dark mb-1">Praktik Kerja Lapangan | WAN TEKNOLOGI
+                        </h4>
+                        <p class="text-gray-500 text-sm">Bertanggung jawab mengembangkan dan mengelola tampilan
+                            antarmuka website/aplikasi perusahaan, termasuk implementasi desain UI, pembaruan konten,
+                            serta memastikan tampilan berjalan dengan baik dan responsif.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="max-w-6xl mx-auto px-4 py-24 bg-white" id="contact">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-4 h-[2px] bg-brand-yellow"></div>
+                    <p class="text-brand-dark font-bold text-xs uppercase tracking-wider">Contact Us</p>
+                </div>
+                <h2 class="text-5xl font-extrabold text-brand-dark leading-tight mb-6">
+                    Let's Talk for <span class="text-brand-yellow">Your <br>Next Projects</span>
+                </h2>
+                <p class="text-gray-500 mb-12 max-w-sm leading-relaxed">
+                    Saya siap membantu mewujudkan ide dan project website Anda menjadi tampilan yang modern, responsif,
+                    dan menarik.
+                    Jangan ragu untuk menghubungi saya untuk kerja sama, freelance, maupun diskusi project selanjutnya.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="flex items-center gap-5 group cursor-pointer">
+                        <div
+                            class="w-12 h-12 bg-brand-yellow rounded-full flex items-center justify-center text-brand-dark shadow-sm group-hover:scale-110 transition">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span class="text-brand-dark font-bold text-lg">+62 815 8581 9152</span>
+                    </div>
+
+                    <div class="flex items-center gap-5 group cursor-pointer">
+                        <div
+                            class="w-12 h-12 bg-brand-yellow rounded-full flex items-center justify-center text-brand-dark shadow-sm group-hover:scale-110 transition">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span class="text-brand-dark font-bold text-lg">nadilaoktaviana855@gmail.com</span>
+                    </div>
+
+                    <div class="flex items-center gap-5 group cursor-pointer">
+                        <div
+                            class="w-12 h-12 bg-brand-yellow rounded-full flex items-center justify-center text-brand-dark shadow-sm group-hover:scale-110 transition">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <span class="text-brand-dark font-bold text-lg">linkedin.com/in/nadila-oktaviana/</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bg-white">
+                <form action="#" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-brand-dark font-bold text-sm">Your Name *</label>
+                        <input type="text" placeholder="Nadila"
+                            class="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-yellow transition">
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label class="text-brand-dark font-bold text-sm">Email *</label>
+                        <input type="email" placeholder="nadila@gmail.com"
+                            class="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-yellow transition">
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label class="text-brand-dark font-bold text-sm">Phone *</label>
+                        <input type="text" placeholder="Enter Phone Number"
+                            class="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-yellow transition">
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label class="text-brand-dark font-bold text-sm">I'm Interested In *</label>
+                        <select
+                            class="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-yellow transition appearance-none text-gray-400">
+                            <option>UI/UX Design</option>
+                            <option>Frontend Developer</option>
+                            <option>Web Developer</option>
+                        </select>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label class="text-brand-dark font-bold text-sm">Budget Range (USD) *</label>
+                        <select
+                            class="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-yellow transition appearance-none text-gray-400">
+                            <option>Select Range</option>
+                            <option>Rp. 300.000 - Rp. 500.000</option>
+                            <option>Rp. 500.000 - Rp. 1.000.000</option>
+                        </select>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label class="text-brand-dark font-bold text-sm">Country *</label>
+                        <select
+                            class="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-yellow transition appearance-none text-gray-400">
+                            <option>Select Country</option>
+                            <option>USA</option>
+                            <option>Indonesia</option>
+                        </select>
+                    </div>
+
+                    <div class="flex flex-col gap-2 md:col-span-2">
+                        <label class="text-brand-dark font-bold text-sm">Your Message *</label>
+                        <textarea rows="4" placeholder="Write here..."
+                            class="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-yellow transition resize-none"></textarea>
+                    </div>
+
+                    <div class="md:col-span-2 mt-4">
+                        <button type="submit"
+                            class="bg-[#2d4a36] text-white pl-8 pr-2 py-2 rounded-full font-bold flex items-center gap-6 hover:bg-brand-dark transition shadow-lg">
+                            Submit
+                            <span
+                                class="bg-brand-yellow text-white w-10 h-10 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-paper-plane text-sm"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-100 py-10">
+        <div
+            class="max-w-6xl mx-auto px-4 flex flex-col md:row justify-between items-center gap-4 text-gray-400 text-sm">
+            <p>© 2026 Nadila Oktaviana Putri. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-brand-yellow transition">Privacy Policy</a>
+                <a href="#" class="hover:text-brand-yellow transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
